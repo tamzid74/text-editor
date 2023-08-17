@@ -1,5 +1,9 @@
 document.getElementById('btn-bold').addEventListener('click', function(){
-    const textFieldValue = document.getElementById('text-field');
-    const textField = textFieldValue.value;
-    textField.style.fontWeight = '600';
+    const textField = document.getElementById('text-field');
+    // textField.style.fontWeight = 'bold';
+    if(textField.style.fontWeight === 'bold'){
+        textField.style.fontWeight = 'normal';
+    }else{
+        textField.style.fontWeight = 'bold';
+    }
 })
